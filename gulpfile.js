@@ -1,8 +1,3 @@
-/*
-I am at the end of "useref" right before the "gulp-uglify" install, after running "gulp useref" it created main.min.js, but there isn't anything in it, maybe it's because I ran it before putting anything in those files (need to investigate this)
-*/
-
-
 var gulp=require("gulp");
 var sass=require("gulp-sass");
 var browserSync=require("browser-sync").create();
@@ -41,7 +36,7 @@ gulp.task("browserSync",function(){
 });
 
 gulp.task("useref",function(){
-	return gulp.src("app/js/**/*.js")
+	return gulp.src("app/*.html")
 		.pipe(useref())
 		.pipe(gulp.dest("dist"))
 });
