@@ -1,0 +1,19 @@
+$r:red;
+$b:blue;
+$g:green;
+.testing{
+    width:percentage(5/7);
+}
+.check{
+    p{
+      color:$g;
+    }
+}
+.test{
+	color:$r;
+}
+body{
+	background:$b;
+}
+
+
